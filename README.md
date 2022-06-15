@@ -20,6 +20,8 @@
 
 - [ejs](https://www.npmjs.com/package/ejs)
 
+- [mongoose](https://www.npmjs.com/package/mongoose)
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
