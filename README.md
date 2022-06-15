@@ -1,1 +1,27 @@
 # SmartEdu
+
+## SmartEdu Projesi
+
+> Bu repo [Patika.dev](https://www.patika.dev/tr)'in hazırlamış olduğu [Node.js](https://app.patika.dev/courses/nodejs) eğitim patikasının [Smartedu Projesi](https://app.patika.dev/courses/nodejs/SmarteduProject) için oluşturulmuştur.
+
+---
+
+![Smartedu](https://html.design/wp-content/uploads/2019/01/smartedu-758x948.jpg)
+
+---
+
+## Kullanılan Kaynaklar ve Paketler
+
+- SmartEdu [Proje Başlangıç Dosyaları](https://drive.google.com/drive/folders/1JQRLo-IZG-B3536rJSZ2jZeKfkcjNcA4) ya da [Proje Template Kaynak](https://html.design/download/smartedu-education-template/)
+
+- [express](https://www.npmjs.com/package/express)
+
+- [nodemon](https://www.npmjs.com/package/nodemon)
+
+- [ejs](https://www.npmjs.com/package/ejs)
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
+[Patika](https://www.patika.dev)
