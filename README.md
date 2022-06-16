@@ -22,6 +22,8 @@
 
 - [mongoose](https://www.npmjs.com/package/mongoose)
 
+- [slugify](https://www.npmjs.com/package/slugify)
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
