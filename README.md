@@ -24,6 +24,8 @@
 
 - [slugify](https://www.npmjs.com/package/slugify)
 
+- [bcrypt](https://www.npmjs.com/package/bcrypt)
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
