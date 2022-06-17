@@ -26,6 +26,8 @@
 
 - [bcrypt](https://www.npmjs.com/package/bcrypt)
 
+- [express-session](https://www.npmjs.com/package/express-session)
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
