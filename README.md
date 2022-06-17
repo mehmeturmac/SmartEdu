@@ -28,6 +28,8 @@
 
 - [express-session](https://www.npmjs.com/package/express-session)
 
+- [connect-mongo](https://www.npmjs.com/package/connect-mongo)
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
