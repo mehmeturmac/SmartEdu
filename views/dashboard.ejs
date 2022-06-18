@@ -1,12 +1,12 @@
-<%- include('partials/_header') %> <%- include('partials/_navigation') %>
-
+<%- include('partials/_header') %> <%- include('partials/_navigation') %> <%
+if(user) { %>
 <div class="all-title-box">
   <div class="container text-center">
-    <h1>
-      <%= user.name %><span class="m_1"
-        >Lorem Ipsum dolroin gravida nibh vel velit.</span
-      >
-    </h1>
+    <% if (user.role === 'teacher') { %>
+    <h1><%= user.name %><span class="m_1">Teacher</span></h1>
+    <% } %> <% if (user.role === 'student') { %>
+    <h1><%= user.name %><span class="m_1">Student</span></h1>
+    <% } %>
   </div>
 </div>
 
@@ -128,4 +128,4 @@
 </div>
 <!-- end section -->
 
-<%- include('partials/_footer') %>
+<% } %> <%- include('partials/_footer') %>
