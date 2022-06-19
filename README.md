@@ -32,6 +32,8 @@
 
 - [nodemailer](https://www.npmjs.com/package/nodemailer)
 
+- [connect-flash](https://www.npmjs.com/package/connect-flash)
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)

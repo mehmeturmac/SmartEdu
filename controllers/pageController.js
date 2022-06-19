@@ -31,27 +31,33 @@ exports.getContactPage = (req, res) => {
 };
 
 exports.sendEmail = async (req, res) => {
-  let transporter = nodemailer.createTransport({
-    host: "smtp.ethereal.email",
-    port: 587,
-    secure: false,
-    auth: {
-      user: "kole.lebsack46@ethereal.email",
-      pass: "YVBT2sZfCAg7jQhvvh",
-    },
-  });
+  try {
+    let transporter = nodemailer.createTransport({
+      host: "smtp.ethereal.email",
+      port: 587,
+      secure: false,
+      auth: {
+        user: "kole.lebsack46@ethereal.email",
+        pass: "YVBT2sZfCAg7jQhvvh",
+      },
+    });
 
-  let info = await transporter.sendMail({
-    from: '"Smart EDU Contact Form 👻" <kole.lebsack46@ethereal.email>',
-    to: "mehmeturmac@gmail.com",
-    subject: "Smart EDU Contact Form New Message ✔",
-    html: `<h1>Mail Details</h1>
+    let info = await transporter.sendMail({
+      from: '"Smart EDU Contact Form 👻" <kole.lebsack46@ethereal.email>',
+      to: "mehmeturmac@gmail.com",
+      subject: "Smart EDU Contact Form New Message ✔",
+      html: `<h1>Mail Details</h1>
     <ul>
       <li>Name: ${req.body.name}</li>
       <li>Email: ${req.body.email}</li>
     </ul>
     <h1>Message</h1>
     <p>${req.body.message}</p>`,
-  });
-  res.status(200).redirect("contact");
+    });
+    req.flash("success", "We received your message successfully!");
+    res.status(200).redirect("contact");
+  } catch (error) {
+    req.flash("error", `Something happened!`);
+    res.status(200).redirect("contact");
+  }
 };
