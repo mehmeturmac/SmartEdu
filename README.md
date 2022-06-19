@@ -36,6 +36,8 @@
 
 - [express-validator](https://www.npmjs.com/package/express-validator)
 
+- [method-override](https://www.npmjs.com/package/method-override)
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)

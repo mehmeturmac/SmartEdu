@@ -4,7 +4,7 @@ const Category = require("../models/Category");
 
 exports.createCourse = async (req, res) => {
   try {
-    await Course.create({
+    const course = await Course.create({
       name: req.body.name,
       description: req.body.description,
       category: req.body.category,
@@ -95,6 +95,19 @@ exports.releaseCourse = async (req, res) => {
     const user = await User.findById(req.session.userID);
     await user.courses.pull({ _id: req.body.course_id });
     await user.save();
+    res.status(200).redirect("/users/dashboard");
+  } catch (error) {
+    res.status(400).json({
+      status: "failed",
+      error,
+    });
+  }
+};
+
+exports.deleteCourse = async (req, res) => {
+  try {
+    const course = await Course.findOneAndRemove({ slug: req.params.slug });
+    req.flash("error", `${course.name} has been removed successfully!`);
     res.status(200).redirect("/users/dashboard");
   } catch (error) {
     res.status(400).json({
