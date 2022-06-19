@@ -30,6 +30,8 @@
 
 - [connect-mongo](https://www.npmjs.com/package/connect-mongo)
 
+- [nodemailer](https://www.npmjs.com/package/nodemailer)
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
