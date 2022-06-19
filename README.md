@@ -34,6 +34,8 @@
 
 - [connect-flash](https://www.npmjs.com/package/connect-flash)
 
+- [express-validator](https://www.npmjs.com/package/express-validator)
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
