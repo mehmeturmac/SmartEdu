@@ -1,5 +1,7 @@
 # SmartEdu
 
+> https://smartedu-heroku.herokuapp.com/
+
 ## SmartEdu Projesi
 
 > Bu repo [Patika.dev](https://www.patika.dev/tr)'in hazırlamış olduğu [Node.js](https://app.patika.dev/courses/nodejs) eğitim patikasının [Smartedu Projesi](https://app.patika.dev/courses/nodejs/SmarteduProject) için oluşturulmuştur.
